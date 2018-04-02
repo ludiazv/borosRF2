@@ -6,6 +6,8 @@ arduino(AVR), STM  or other mcu projects to interact with other sensors or devic
 this kind of devices and DYI projects with regular computers running linux and high-level
 development technologies like ruby ,python or nodejs. OIT/SmartHome frameworks such Node-RED, MySensors, OpenHab,... also support NRF24L01 radios integrate sensors and actuators.
 
+![image](https://github.com/ludiazv/borosRF2/blob/master/media/all.jpg?raw=true)
+
 __Boros RF2__ offer a dual header for up to two __NRF24L01 / NRF24L01+__  radios connected to your Raspberry Pi (or similar SBCs).
 
 The typical applications of this radios:
@@ -24,6 +26,8 @@ The typical applications of this radios:
 ... and much more.
 
 __Boros RF2__ help hobbists and makers to use integrate radio communication in their projects/products without dealing with the complexities of hardware interfaces with __nRF24L01__ radios. Makers can __focus__ on their project and speed up the development.
+
+You can buy assembled boards on __Tindie__: [Boros Store](https://www.tindie.com/stores/boros/)
 
 
 ## Hardware
@@ -61,13 +65,13 @@ __Boros RF2__ use a minimal set of GPIO of your board.
 Check some examples of pinouts:
 
 *Raspberry Pi 2,3 B,B+,A+ 40pin-20x2:*
-![RPI 40-pin pinout](rpi-pinout.png?raw=true)
+![RPI 40-pin pinout](https://github.com/ludiazv/borosRF2/blob/master/media/rpi-pinout.png?raw=true)
 
 *Orange Pi 40pin-20x2:*
-![Orange Pi 40-pin pinout](opi-pinout.png?raw=true)
+![Orange Pi 40-pin pinout](https://github.com/ludiazv/borosRF2/blob/master/media/opi-pinout.png?raw=true)
 
 *Orange Pi Zero 26pin-13x2:*
-![Orange Pi Zero 20-pin pinout](opi-zero-pinout.jpg?raw=true)
+![Orange Pi Zero 20-pin pinout](https://github.com/ludiazv/borosRF2/blob/master/media/opi-zero-pinout.jpg?raw=true)
 
 
 | Physical Pin | RPI GPIO #      | Orange Pi GPIO | Notes
