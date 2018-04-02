@@ -155,31 +155,35 @@ For older versions ``rc.local``init script should be used to configure the RTC. 
 
 Typical commands in linux console to work with the driver are (__require root/sudo__):
 
-```bash
-# Init the driver manually
-echo ds3231 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
 
-# Read time in the RTC
-hwclock -r
+> Init the driver manually
 
-# Set the RTC with current system time
-hwclock -w
+> echo ds3231 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
 
-# Set the system time with the time stored in the RTC
-hwclock -s
+> Read time in the RTC
 
+> hwclock -r
 
-```
+> Set the RTC with current system time
+
+> hwclock -w
+
+> Set the system time with the time stored in the RTC
+
+> hwclock -s
+
 
 The RTC include a temperature sensor that can be monitor the temperature of the RTC chip. The RTC temperature is updated once a minute (68s) and could provide information about the ambient temperature or the temperature inside your case. Temperature sensor can be read using *sysfs* under the following path: `` /sys/class/hwmon/hwmon0/temp1_input ``. To convert to human readable centigrade temperature you can use this simple one-liner:
 
-```bash
-# Read temp / 1000 in Celsius
-cat /sys/class/hwmon/hwmon0/temp1_input  | awk '{print $1/1000 " C"}'
-# example output
-28.25 C
 
-```
+> Read temp / 1000 in Celsius
+
+> cat /sys/class/hwmon/hwmon0/temp1_input  | awk '{print $1/1000 " C"}'
+
+> example output
+
+> 28.25 C
+
 
 For custom or advanced user could interact directly with the RTC using *i2c-dev* interface or specific libraries.
 
