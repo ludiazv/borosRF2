@@ -11,7 +11,7 @@ echo "\n\n------"
 echo "Testing RTC"
 echo "==========="
 echo "Detecting I2C Slave..."
-i2cdetect -y 1 0x68
+i2cdetect -y 1 0x68 0x68
 echo "Init Kernel module...."
 echo ds3231 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
 echo "Read current time of RTC:$(hwclock -r)"

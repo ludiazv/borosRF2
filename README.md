@@ -3,8 +3,8 @@
 __NRF24L01 / NRF24L01+__ radios are a low-cost way to go wireless for limited resource Hardware
 such micro-controllers or small computer. This radios are popular among in the sensor arena and typical
 arduino(AVR), STM  or other mcu projects to interact with other sensors or devices. __Boros RF2__ enable to integrate
-this kind of devices and DYI projects with regular computers running linux and high-level
-development technologies like ruby ,python or nodejs. OIT/SmartHome frameworks such Node-RED, MySensors, OpenHab,... also support NRF24L01 radios integrate sensors and actuators.
+this kind of devices and DYI projects with regular computers running linux or Windows 10 and high-level
+development technologies like ruby ,python or nodejs. OIT/SmartHome frameworks such Node-RED, MySensors, OpenHab, AdafruitIO, AzureIoT... also support NRF24L01 radios integrate sensors and actuators.
 
 ![image](https://github.com/ludiazv/borosRF2/blob/master/media/all.jpg?raw=true)
 
@@ -120,6 +120,14 @@ Check the video for mounting:
 
 There are several ways to interact with __nRF24L01__ radios in linux environments. For standard purposes the recommended software are:
 
+
+### Windows 10 / .Net /C#
+
+[@kiwiBryn](https://github.com/KiwiBryn) has created a set of solutions for field gateways/hubs for __AzureIoT__ and __AdafruitIO__. Check his blog post [here](https://blog.devmobile.co.nz/2019/04/04/windows-10-iot-core-borosrf2-dual-nrf24l01-phat-hat/). Code repositories are here for [AzureIoT](https://github.com/KiwiBryn/Azure.IoTHub.IoTCore.FieldGateway.nRF24L01) and [AdafruitIO](https://github.com/KiwiBryn/AdaFruitIO.IoTCore.FieldGateway.nRF24L01). 
+
+Also a RF24 driver for in C# for .NET framework can be found [here](https://github.com/gralin/nrf24l01). 
+
+
 ### C++:
   [nRF24](https://github.com/nRF24/RF24) is a stable and optimized library enable control radios in linux with the same primitives of the Arduino environment.
 
@@ -195,6 +203,7 @@ For custom or advanced user could interact directly with the RTC using *i2c-dev*
   - Zero
   - Zero W
   - 3 B
+- Raspberry PI 3B Windows 10 (only RF interfaces)
 - Orange Pi (using armbian mainline ubuntu xenial or Debian Strech):
   - Orange Pi (H3)
   - Orange Pi zero (H2+)
